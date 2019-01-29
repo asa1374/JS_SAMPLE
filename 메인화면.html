@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.grid-container {
+  display: grid;
+  height: 400px;
+  align-content: center;
+  grid-template-columns: auto auto;
+  grid-gap: 3px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+#item1{
+	background-color: #4cda26;
+}
+#item2{
+	background-color: #972edc;
+}
+#submit-btn{
+  background-color: #4cda26; 
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20%;
+}
+#reset-btn{
+  background-color: #972edc; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20%;
+}
+</style>
+</head>
+<body>
+	<div class="grid-container">
+	  <div class="grid-item" id="item1">사원전용 로그인</div>
+	  <div class="grid-item" id="item2">관리자전용 로그인</div>
+	  <div class="grid-item"><input type="submit" id="submit-btn" value ="로그인"/></div>
+      <div class="grid-item"><input type="reset" id="reset-btn" value ="로그인"/></div>
+	</div>
+</body>
+</html>
